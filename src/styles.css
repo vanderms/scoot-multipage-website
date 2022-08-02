@@ -192,3 +192,54 @@
     mask-image: url("/assets/icons/instagram.svg");
   }
 }
+
+@layer components {
+  .bg-image {
+    @apply block absolute inset-0 bg-cover bg-no-repeat bg-center;
+    content: "";
+  }
+
+  .bg-pattern-container {
+    @apply w-full block h-0 relative;
+  }
+
+  .bg-right-arrow-pattern {
+    @apply bg-pattern-container;
+    padding-bottom: 33.4070796%;
+  }
+
+  .bg-white-circles-pattern {
+    @apply bg-pattern-container;
+    padding-bottom: 26.9230769%;
+  }
+
+  .bg-white-circles-pattern::before {
+    @apply bg-image;
+    background-image: url("assets/patterns/white-circles.svg");
+  }
+
+  .bg-right-arrow-pattern::before {
+    @apply bg-image;
+    background-image: url("assets/patterns/right-arrow.svg");
+  }
+
+  .bg-hero-homepage::before {
+    @apply bg-image;
+    background-image: url(/assets/images/home-hero-mobile.jpg);
+  }
+
+  @media screen(md) {
+    .bg-hero-homepage::before {
+      background-image: url(/assets/images/home-hero-tablet.jpg);
+    }
+  }
+
+  @media screen(md) {
+    .bg-hero-homepage::before {
+      background-image: url(/assets/images/home-hero-desktop.jpg);
+    }
+  }
+}
+
+@layer components {
+}
