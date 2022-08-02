@@ -226,6 +226,11 @@
     padding-bottom: 26.9230769%;
   }
 
+  .bg-large-circles-pattern {
+    @apply bg-pattern-container;
+    padding-bottom: 31.2661499%;
+  }
+
   .bg-circle-pattern {
     @apply bg-pattern-container;
     padding-bottom: 100%;
@@ -241,6 +246,11 @@
     background-image: url("assets/patterns/white-circles.svg");
   }
 
+  .bg-large-circles-pattern::before {
+    @apply bg-image;
+    background-image: url('assets/patterns/large-circles.svg');
+  }
+
   .bg-right-arrow-pattern::before {
     @apply bg-image;
     background-image: url("assets/patterns/right-arrow.svg");
@@ -251,9 +261,9 @@
     background-image: url("assets/patterns/left-downward-arrow.svg");
   }
 
-  .bg-right-downward-pattern::before{
+  .bg-right-downward-pattern::before {
     @apply bg-image;
-    background-image: url('assets/patterns/right-downward.svg');
+    background-image: url("assets/patterns/right-downward.svg");
   }
 
   .bg-line-pattern::before {
