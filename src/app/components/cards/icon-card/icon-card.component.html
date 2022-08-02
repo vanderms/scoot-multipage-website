@@ -1,0 +1,13 @@
+<article class="grid grid-cols-1 gap-y-6 justify-items-center 
+  md:grid-cols-[6rem,1fr] gap-x-20 xl:grid-cols-1 xl:justify-items-start xl:gap-y-10
+">
+  <img [src]="icon" alt="" class="w-14 h-14 object-center object-contain md:w-24 md:h-24">
+  <header>
+    <div class="heading-xs text-center md:text-left">
+      <ng-content select="[title]"></ng-content>
+    </div>
+    <div class="body-md text-center mt-6 md:text-left xl:mt-[1.6875rem]">
+      <ng-content></ng-content>
+    </div>
+  </header>
+</article>

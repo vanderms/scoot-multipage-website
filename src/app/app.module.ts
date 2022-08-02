@@ -15,6 +15,7 @@ import { TelemetryFeaturesSectionComponent } from './components/sections/telemet
 import { ComingFeaturesSectionComponent } from './components/sections/coming-features-section/coming-features-section.component';
 import { PaymentsFeaturesSectionComponent } from './components/sections/payments-features-section/payments-features-section.component';
 import { CallToActionSectionComponent } from './components/sections/call-to-action-section/call-to-action-section.component';
+import { IconCardComponent } from './components/cards/icon-card/icon-card.component';
 
 @NgModule({
   declarations: [
@@ -31,6 +32,7 @@ import { CallToActionSectionComponent } from './components/sections/call-to-acti
     ComingFeaturesSectionComponent,
     PaymentsFeaturesSectionComponent,
     CallToActionSectionComponent,
+    IconCardComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
