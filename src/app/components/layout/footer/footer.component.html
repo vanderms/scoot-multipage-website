@@ -1,1 +1,30 @@
-<p>footer works!</p>
+<footer class="bg-neutral-850 pt-16 pb-[5.5rem] md:pt-[2.1875rem] md:pb-8">
+  <div
+    class="container flex flex-col items-center md:flex-row md:justify-between md:gap-[3.625rem]">
+    <a routerLink="/" aria-label="Homepage">
+      <img src="/assets/logo.svg" alt="" class='[filter:brightness(0)_invert(100%)]'>
+    </a>
+    <div class="flex flex-col items-center md:grow md:flex-row md:justify-between">
+      <ul
+        class="mt-10 body-ft text-neutral-500 flex flex-col items-center gap-4 md:mt-0 md:flex-row">
+        <li routerLink="/about" class="hover:text-primary">About</li>
+        <li routerLink="/locations" class="hover:text-primary">Location</li>
+        <li routerLink="/careers" class="hover:text-primary">Careers</li>
+      </ul>
+      <ul class="mt-20 flex justify-center items-center gap-6 md:mt-0">
+        <li>
+          <a href="http://www.facebook.com" target="_blank" rel="noopener noreferrer"
+            aria-label="facebook" class="mask-icon"></a>
+        </li>
+        <li>
+          <a href="http://www.twitter.com" target="_blank" rel="noopener noreferrer"
+            aria-label="twitter" class="mask-icon"></a>
+        </li>
+        <li>
+          <a href="http://www.instagram.com" target="_blank" rel="noopener noreferrer"
+            aria-label="instagram" class="mask-icon"></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>

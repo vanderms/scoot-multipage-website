@@ -19,18 +19,22 @@
         <div
           class="w-full h-full text-neutral flex flex-col justify-between md:flex-row md:text-neutral-500 md:items-center">
           <ul class="flex flex-col body-nv gap-6 md:flex-row md:items-center">
-            <li><a routerLink="/about" (click)="closeSidebar()">About</a></li>
-            <li><a routerLink="/locations" (click)="closeSidebar()">Location</a></li>
-            <li><a routerLink="/careers" (click)="closeSidebar()">Careers</a></li>
+            <li><a routerLink="/about" (click)="closeSidebar()"
+                class="hover:text-primary">About</a></li>
+            <li><a routerLink="/locations" (click)="closeSidebar()"
+                class="hover:text-primary">Location</a></li>
+            <li><a routerLink="/careers" (click)="closeSidebar()"
+                class="hover:text-primary">Careers</a></li>
           </ul>
           <a routerLink="/" class="button-primary md:w-[11.25rem]"
-            (click)="closeSidebar()">Get
-            Scootin</a>
+            (click)="closeSidebar()">
+            Get Scootin
+          </a>
         </div>
       </div>
 
       <div *ngIf="isSidebarOpen" (click)="closeSidebar()"
-        class="fixed z-[101] h-[calc(100vh_-_4rem)] w-full top-16 left-0 bg-[#000] opacity-75">
+        class="fixed z-[101] h-[calc(100vh_-_4rem)] w-full top-16 left-0 bg-[#000] opacity-75 md:hidden">
       </div>
     </div>
   </div>

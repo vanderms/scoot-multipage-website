@@ -171,3 +171,24 @@
     line-height: 1.5625rem;
   }
 }
+
+@layer components {
+  .mask-icon {
+    @apply block w-6 h-6 bg-primary hover:bg-neutral;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
+  }
+
+  .mask-icon[aria-label="facebook"] {
+    mask-image: url("/assets/icons/facebook.svg");
+  }
+
+  .mask-icon[aria-label="twitter"] {
+    mask-image: url("/assets/icons/twitter.svg");
+  }
+
+  .mask-icon[aria-label="instagram"] {
+    mask-image: url("/assets/icons/instagram.svg");
+  }
+}
