@@ -16,6 +16,10 @@
     font-family: "Space Mono", monospace;
   }
 
+  main {
+    min-height: 100vh;
+  }
+
   :root {
     --clr-primary: #fcb72b;
     --clr-primary-300: #fff4df;
