@@ -9,6 +9,12 @@ import { CareersComponent } from './pages/careers/careers.component';
 import { LocationsComponent } from './pages/locations/locations.component';
 import { NavbarComponent } from './components/layout/navbar/navbar.component';
 import { FooterComponent } from './components/layout/footer/footer.component';
+import { HeroSectionComponent } from './components/sections/hero-section/hero-section.component';
+import { HowItWorksSectionComponent } from './components/sections/how-it-works-section/how-it-works-section.component';
+import { TelemetryFeaturesSectionComponent } from './components/sections/telemetry-features-section/telemetry-features-section.component';
+import { ComingFeaturesSectionComponent } from './components/sections/coming-features-section/coming-features-section.component';
+import { PaymentsFeaturesSectionComponent } from './components/sections/payments-features-section/payments-features-section.component';
+import { CallToActionSectionComponent } from './components/sections/call-to-action-section/call-to-action-section.component';
 
 @NgModule({
   declarations: [
@@ -19,6 +25,12 @@ import { FooterComponent } from './components/layout/footer/footer.component';
     LocationsComponent,
     NavbarComponent,
     FooterComponent,
+    HeroSectionComponent,
+    HowItWorksSectionComponent,
+    TelemetryFeaturesSectionComponent,
+    ComingFeaturesSectionComponent,
+    PaymentsFeaturesSectionComponent,
+    CallToActionSectionComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
