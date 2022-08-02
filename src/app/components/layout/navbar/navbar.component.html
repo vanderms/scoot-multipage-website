@@ -1,1 +1,37 @@
-<p>navbar works!</p>
+<nav class="h-16 md:h-24">
+  <div class="fixed z-[100] top-0 left-0 w-full h-16 bg-neutral drop-shadow-sm md:h-24">
+    <div
+      class="container h-full flex justify-center items-center relative md:gap-[3.625rem]">
+      <button aria-label="toggle sidebar menu" (click)="toggleSidebar()"
+        class="absolute left-0 md:hidden">
+        <img
+          [src]="isSidebarOpen ? 'assets/icons/close.svg' : '/assets/icons/hamburger.svg'"
+          alt="">
+      </button>
+      <a routerLink="/" aria-label="Homepage" class="w-[4.6875rem] md:w-[6.75rem]"
+        (click)="closeSidebar()">
+        <img src="/assets/logo.svg" alt="">
+      </a>
+      <div class="fixed z-[102] h-[calc(100vh_-_4rem)] w-[16rem] top-16 pt-16 pb-6 px-8
+        bg-neutral-850 md:contents"
+        [ngClass]="isSidebarOpen ? 'left-0 transition-all duration-300': 'left-[-100vw]'">
+
+        <div
+          class="w-full h-full text-neutral flex flex-col justify-between md:flex-row md:text-neutral-500 md:items-center">
+          <ul class="flex flex-col body-nv gap-6 md:flex-row md:items-center">
+            <li><a routerLink="/about" (click)="closeSidebar()">About</a></li>
+            <li><a routerLink="/locations" (click)="closeSidebar()">Location</a></li>
+            <li><a routerLink="/careers" (click)="closeSidebar()">Careers</a></li>
+          </ul>
+          <a routerLink="/" class="button-primary md:w-[11.25rem]"
+            (click)="closeSidebar()">Get
+            Scootin</a>
+        </div>
+      </div>
+
+      <div *ngIf="isSidebarOpen" (click)="closeSidebar()"
+        class="fixed z-[101] h-[calc(100vh_-_4rem)] w-full top-16 left-0 bg-[#000] opacity-75">
+      </div>
+    </div>
+  </div>
+</nav>

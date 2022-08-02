@@ -28,6 +28,7 @@
     --clr-neutral-300: #e5ecf4;
     --clr-neutral-500: #939caa;
     --clr-neutral-800: #495567;
+    --clr-neutral-850: #333a44;
   }
 
   .surface-dark {
@@ -60,7 +61,7 @@
 
   @media screen(md) {
     .container {
-      width: min(74.609375%, 48rem);
+      width: min(89.7135417%, 48rem);
     }
   }
 
@@ -158,5 +159,15 @@
   }
 
   @media screen(xl) {
+  }
+}
+
+@layer components {
+  .button-primary {
+    @apply font-mono font-bold bg-primary text-neutral grid place-items-center border border-primary
+    hover:bg-transparent hover:text-primary;
+    height: 3.3125rem;
+    font-size: 0.9375rem;
+    line-height: 1.5625rem;
   }
 }

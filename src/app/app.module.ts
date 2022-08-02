@@ -18,13 +18,10 @@ import { FooterComponent } from './components/layout/footer/footer.component';
     CareersComponent,
     LocationsComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

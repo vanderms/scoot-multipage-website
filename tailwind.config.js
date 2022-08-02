@@ -18,6 +18,7 @@ module.exports = {
       "neutral-300": "var(--clr-neutral-300)",
       "neutral-500": "var(--clr-neutral-500)",
       "neutral-800": "var(--clr-neutral-800)",
+      "neutral-850": "var(--clr-neutral-850)",
       "transparent": "transparent"
     },
 
