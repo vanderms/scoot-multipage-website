@@ -1,1 +1,158 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-family: "Lexend Deca", sans-serif;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Space Mono", monospace;
+  }
+
+  :root {
+    --clr-primary: #fcb72b;
+    --clr-primary-300: #fff4df;
+    --clr-neutral: #ffffff;
+    --clr-neutral-200: #f2f5f9;
+    --clr-neutral-300: #e5ecf4;
+    --clr-neutral-500: #939caa;
+    --clr-neutral-800: #495567;
+  }
+
+  .surface-dark {
+    --clr-heading: var(--clr-neutral);
+    --clr-body: var(--clr-neutral);
+  }
+
+  .surface-light {
+    --clr-heading: var(--clr-neutral-800);
+    --clr-body: var(--clr-neutral-500);
+  }
+
+  .surface-light-dense {
+    --clr-heading: var(--clr-neutral-800);
+    --clr-body: var(--clr-neutral-800);
+  }
+}
+
+@layer components {
+  .container {
+    @apply mx-auto;
+    max-width: 96%;
+  }
+
+  @media screen(sm) {
+    .container {
+      width: min(82.9333333%, 35.8125rem);
+    }
+  }
+
+  @media screen(md) {
+    .container {
+      width: min(74.609375%, 48rem);
+    }
+  }
+
+  @media screen(xl) {
+    .container {
+      width: clamp(69.375rem, 77.0833333vw, 80rem);
+    }
+  }
+}
+
+@layer components {
+  .heading-xl {
+    @apply font-mono font-bold;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+    letter-spacing: -1.78571px;
+    color: var(--clr-heading);
+  }
+
+  .heading-md {
+    @apply font-mono font-bold;
+    font-size: 2rem;
+    line-height: 2rem;
+    letter-spacing: -1.42857px;
+    color: var(--clr-heading);
+  }
+
+  .heading-sm {
+    @apply font-mono font-bold;
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+    letter-spacing: -1.07143px;
+  }
+
+  .heading-xs {
+    @apply font-mono font-bold;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    letter-spacing: -0.892857px;
+    color: var(--clr-heading);
+  }
+
+  .body-xl {
+    @apply font-sans;
+    font-weight: 400;
+    font-size: 0.9375rem;
+    line-height: 1.5625rem;
+    color: var(--clr-body);
+  }
+
+  .body-md {
+    @apply body-xl;
+  }
+
+  .body-nv {
+    @apply font-mono font-bold;
+    font-size: 1.125rem;
+    line-height: 1.5625rem;
+  }
+
+  .body-ft {
+    @apply font-mono font-bold;
+    font-size: 0.9375rem;
+    line-height: 1.5625rem;
+  }
+
+  @media screen(md) {
+    .heading-xl {
+      font-size: 3.5rem;
+      line-height: 3.5rem;
+      letter-spacing: -2.5px;
+    }
+
+    .heading-md {
+      font-size: 3rem;
+      line-height: 3rem;
+      letter-spacing: -2.14286px;
+    }
+
+    .heading-sm {
+      font-size: 2.5rem;
+      line-height: 3rem;
+    }
+
+    .heading-xs {
+      font-size: 1.5rem;
+      line-height: 1.75rem;
+      letter-spacing: -1.07143px;
+    }
+
+    .body-nv {
+      font-size: 0.9375rem;
+      line-height: 1.5625rem;
+    }
+  }
+
+  @media screen(xl) {
+  }
+}
