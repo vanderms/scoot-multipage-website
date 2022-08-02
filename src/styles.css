@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 
+/*xl-lateral-margin: max(50vw_-_34.6875rem,0rem)*/
+
 @layer base {
   html {
     font-family: "Lexend Deca", sans-serif;
@@ -213,6 +215,11 @@
     padding-bottom: 26.9230769%;
   }
 
+  .bg-line-pattern {
+    @apply bg-pattern-container;
+    padding-bottom: 7.422535%;
+  }
+
   .bg-white-circles-pattern::before {
     @apply bg-image;
     background-image: url("assets/patterns/white-circles.svg");
@@ -221,6 +228,11 @@
   .bg-right-arrow-pattern::before {
     @apply bg-image;
     background-image: url("assets/patterns/right-arrow.svg");
+  }
+
+  .bg-line-pattern::before {
+    @apply bg-image;
+    background-image: url("assets/patterns/line.svg");
   }
 
   .bg-hero-homepage::before {
