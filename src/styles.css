@@ -211,6 +211,11 @@
     padding-bottom: 33.4070796%;
   }
 
+  .bg-right-downward-pattern {
+    @apply bg-pattern-container;
+    padding-bottom: 20.3778677%;
+  }
+
   .bg-left-downward-pattern {
     @apply bg-pattern-container;
     padding-bottom: 20.3778677%;
@@ -244,6 +249,11 @@
   .bg-left-downward-pattern::before {
     @apply bg-image;
     background-image: url("assets/patterns/left-downward-arrow.svg");
+  }
+
+  .bg-right-downward-pattern::before{
+    @apply bg-image;
+    background-image: url('assets/patterns/right-downward.svg');
   }
 
   .bg-line-pattern::before {

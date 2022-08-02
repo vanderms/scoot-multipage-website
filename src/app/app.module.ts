@@ -16,6 +16,7 @@ import { ComingFeaturesSectionComponent } from './components/sections/coming-fea
 import { PaymentsFeaturesSectionComponent } from './components/sections/payments-features-section/payments-features-section.component';
 import { CallToActionSectionComponent } from './components/sections/call-to-action-section/call-to-action-section.component';
 import { IconCardComponent } from './components/cards/icon-card/icon-card.component';
+import { FeaturesHeaderCardComponent } from './components/cards/features-header-card/features-header-card.component';
 
 @NgModule({
   declarations: [
@@ -33,6 +34,7 @@ import { IconCardComponent } from './components/cards/icon-card/icon-card.compon
     PaymentsFeaturesSectionComponent,
     CallToActionSectionComponent,
     IconCardComponent,
+    FeaturesHeaderCardComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
