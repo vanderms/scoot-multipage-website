@@ -211,9 +211,19 @@
     padding-bottom: 33.4070796%;
   }
 
+  .bg-left-downward-pattern {
+    @apply bg-pattern-container;
+    padding-bottom: 20.3778677%;
+  }
+
   .bg-white-circles-pattern {
     @apply bg-pattern-container;
     padding-bottom: 26.9230769%;
+  }
+
+  .bg-circle-pattern {
+    @apply bg-pattern-container;
+    padding-bottom: 100%;
   }
 
   .bg-line-pattern {
@@ -231,9 +241,19 @@
     background-image: url("assets/patterns/right-arrow.svg");
   }
 
+  .bg-left-downward-pattern::before {
+    @apply bg-image;
+    background-image: url("assets/patterns/left-downward-arrow.svg");
+  }
+
   .bg-line-pattern::before {
     @apply bg-image;
     background-image: url("assets/patterns/line.svg");
+  }
+
+  .bg-circle-pattern::before {
+    @apply bg-image;
+    background-image: url("assets/patterns/circle.svg");
   }
 
   .bg-hero-homepage::before {
