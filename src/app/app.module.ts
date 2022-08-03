@@ -24,6 +24,8 @@ import { FaqSectionComponent } from './components/sections/faq-section/faq-secti
 import { UrbanLivingSectionComponent } from './components/sections/urban-living-section/urban-living-section.component';
 import { OurValuesCardComponent } from './components/cards/our-values-card/our-values-card.component';
 import { FaqCardComponent } from './components/cards/faq-card/faq-card.component';
+import { JoinUsSectionComponent } from './components/sections/join-us-section/join-us-section.component';
+import { AvailableJobsSectionComponent } from './components/sections/available-jobs-section/available-jobs-section.component';
 
 @NgModule({
   declarations: [
@@ -49,6 +51,8 @@ import { FaqCardComponent } from './components/cards/faq-card/faq-card.component
     UrbanLivingSectionComponent,
     OurValuesCardComponent,
     FaqCardComponent,
+    JoinUsSectionComponent,
+    AvailableJobsSectionComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
