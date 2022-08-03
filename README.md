@@ -9,6 +9,6 @@ That's my solution to the challenge [Scoot Multipage Website](https://www.fronte
 
 ## Links:
 
-- Preview: <>
+- Preview: <https://scoot-multipage-website.pages.dev/>
 
 - Solution: <>
