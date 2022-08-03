@@ -27,6 +27,7 @@ import { FaqCardComponent } from './components/cards/faq-card/faq-card.component
 import { JoinUsSectionComponent } from './components/sections/join-us-section/join-us-section.component';
 import { AvailableJobsSectionComponent } from './components/sections/available-jobs-section/available-jobs-section.component';
 import { JobCardComponent } from './components/cards/job-card/job-card.component';
+import { CitiesLocationSectionComponent } from './components/sections/cities-location-section/cities-location-section.component';
 
 @NgModule({
   declarations: [
@@ -55,6 +56,7 @@ import { JobCardComponent } from './components/cards/job-card/job-card.component
     JoinUsSectionComponent,
     AvailableJobsSectionComponent,
     JobCardComponent,
+    CitiesLocationSectionComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
