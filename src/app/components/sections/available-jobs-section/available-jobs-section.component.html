@@ -1,1 +1,11 @@
-<p>available-jobs-section works!</p>
+<section aria-labelledby="title_careers_04"
+  class="surface-light-dense my-[9.0625rem] md:my-[7.5rem] xl:mb-[10rem]">
+  <div class="container">
+    <h2 id="title_careers_04" class="sr-only">Jobs</h2>
+    <ul class="flex flex-col gap-4 xl:gap-6">
+      <li *ngFor="let job of jobs">
+        <app-job-card [role]="job.role" [location]="job.location"></app-job-card>
+      </li>
+    </ul>
+  </div>
+</section>
