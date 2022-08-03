@@ -1,0 +1,15 @@
+<header class="relative h-[10rem] surface-dark md:h-[12.5rem] overflow-hidden">
+  <picture>
+    <source media="(min-width: 74rem)" [srcset]="getSrc('desktop')">
+    <source media="(min-width: 45ren)" [srcset]="getSrc('tablet')">
+    <img [src]="getSrc('mobile')" alt=""
+      class="max-w-none absolute top-0 left-0 w-full h-full object-cover object-center">
+  </picture>
+  <div class="absolute z-10 h-full w-full flex items-center justify-end">
+    <img src="/assets/patterns/white-circles.svg" alt="" class="mr-[-1.9375rem]">
+  </div>
+  <div
+    class="container h-full relative z-20 flex justify-center items-center md:justify-start">
+    <h1 class="heading-xl">{{ title }}</h1>
+  </div>
+</header>
