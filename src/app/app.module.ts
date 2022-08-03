@@ -23,6 +23,7 @@ import { OurValuesSectionComponent } from './components/sections/our-values-sect
 import { FaqSectionComponent } from './components/sections/faq-section/faq-section.component';
 import { UrbanLivingSectionComponent } from './components/sections/urban-living-section/urban-living-section.component';
 import { OurValuesCardComponent } from './components/cards/our-values-card/our-values-card.component';
+import { FaqCardComponent } from './components/cards/faq-card/faq-card.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +48,7 @@ import { OurValuesCardComponent } from './components/cards/our-values-card/our-v
     FaqSectionComponent,
     UrbanLivingSectionComponent,
     OurValuesCardComponent,
+    FaqCardComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

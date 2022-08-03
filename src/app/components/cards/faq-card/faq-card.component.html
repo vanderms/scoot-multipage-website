@@ -1,0 +1,15 @@
+<article class="bg-neutral-200 p-8">
+  <div class="grid grid-cols-[1fr,1rem] gap-4">
+    <div class="heading-xs">
+      <ng-content select="[question]"></ng-content>
+    </div>
+    <button aria-label="display answer" (click)="onClick()">
+      <img src="/assets/icons/chevron.svg" alt=""
+        [ngClass]="{'rotate-180': displayAnswer}" class="transition-all">
+    </button>
+  </div>
+  <div [ngClass]="displayAnswer ? 'mt-8 max-h-[25rem]' : 'mt-0 max-h-0'"
+    class="transition-all body-md overflow-hidden">
+    <ng-content select="[answer]"></ng-content>
+  </div>
+</article>
