@@ -1,1 +1,34 @@
-<p>our-values-section works!</p>
+<section aria-labelledby="title_about_04" class="surface-light mt-[7.5rem]">
+  <div class="container">
+    <h2 class="heading-md text-center">{{ title }}</h2>
+    <ol class="mt-16 grid grid-cols-1 gap-14 xl:mt-[6.5rem] xl:grid-cols-3">
+      <li>
+        <app-our-values-card index="01" image="/assets/images/our-tech.jpg">
+          <h3 title>Our tech</h3>
+          <p>We&apos;re using cutting edge technology to drive accessible urban
+            transportation
+            forward. Our
+            fully electric scooters are a joy to ride!</p>
+        </app-our-values-card>
+      </li>
+      <li>
+        <app-our-values-card index="02" image="/assets/images/our-integrity.jpg">
+          <h3 title>Our integrity</h3>
+          <p>We are fully committed to deliver a great yet safe, sustainable
+            micro-mobility experience
+            in every city we serve.</p>
+        </app-our-values-card>
+      </li>
+      <li>
+        <app-our-values-card index="03" image="/assets/images/our-community.jpg">
+          <h3 title>Our community</h3>
+          <p>We support every community we serve. All workers are paid a living wage based
+            on their
+            location and are Scoot employees.</p>
+        </app-our-values-card>
+      </li>
+
+    </ol>
+
+  </div>
+</section>

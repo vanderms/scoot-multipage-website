@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-our-values-section',
@@ -8,6 +8,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class OurValuesSectionComponent implements OnInit {
 
+  @Input() title: string = '';
+  
   constructor() { }
 
   ngOnInit(): void {

@@ -22,6 +22,7 @@ import { MobilityAboutSectionComponent } from './components/sections/mobility-ab
 import { OurValuesSectionComponent } from './components/sections/our-values-section/our-values-section.component';
 import { FaqSectionComponent } from './components/sections/faq-section/faq-section.component';
 import { UrbanLivingSectionComponent } from './components/sections/urban-living-section/urban-living-section.component';
+import { OurValuesCardComponent } from './components/cards/our-values-card/our-values-card.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import { UrbanLivingSectionComponent } from './components/sections/urban-living-
     OurValuesSectionComponent,
     FaqSectionComponent,
     UrbanLivingSectionComponent,
+    OurValuesCardComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
