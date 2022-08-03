@@ -17,6 +17,11 @@ import { PaymentsFeaturesSectionComponent } from './components/sections/payments
 import { CallToActionSectionComponent } from './components/sections/call-to-action-section/call-to-action-section.component';
 import { IconCardComponent } from './components/cards/icon-card/icon-card.component';
 import { FeaturesHeaderCardComponent } from './components/cards/features-header-card/features-header-card.component';
+import { BannerAboutSectionComponent } from './components/sections/banner-about-section/banner-about-section.component';
+import { MobilityAboutSectionComponent } from './components/sections/mobility-about-section/mobility-about-section.component';
+import { OurValuesSectionComponent } from './components/sections/our-values-section/our-values-section.component';
+import { FaqSectionComponent } from './components/sections/faq-section/faq-section.component';
+import { UrbanLivingSectionComponent } from './components/sections/urban-living-section/urban-living-section.component';
 
 @NgModule({
   declarations: [
@@ -35,6 +40,11 @@ import { FeaturesHeaderCardComponent } from './components/cards/features-header-
     CallToActionSectionComponent,
     IconCardComponent,
     FeaturesHeaderCardComponent,
+    BannerAboutSectionComponent,
+    MobilityAboutSectionComponent,  
+    OurValuesSectionComponent,
+    FaqSectionComponent,
+    UrbanLivingSectionComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
